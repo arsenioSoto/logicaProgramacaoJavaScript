@@ -1,0 +1,31 @@
+<neta charset = "UTF-8">
+
+  <script>
+
+      function mostra(frase) {
+
+        document.write(frase);
+          pula();
+      }
+
+      function pula() {
+
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function calculoImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+        //var imc1 = peso / (altura*altura);
+
+      }
+
+      var imcJr = calculoImc(1.70, 78);
+      var imc1 = calculoImc(1.90, 100);
+
+      mostra(imcJr);
+      mostra(imc1);
+
+  </script>

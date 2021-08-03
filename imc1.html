@@ -1,0 +1,27 @@
+<meta charset= "UTF-8">
+
+<script>
+
+    function pula() {
+      document.write("<br>");
+      document.write("<br>");
+
+    }
+
+    function mostra(frase){
+
+      document.write(frase);
+      pula();
+    }
+    //funcao ou metodo que recebe mais de um paramentro
+    function calculaImc(peso, altura){
+      //variavel para receber o calculo do peso e a altura
+      var imc = peso / (altura*altura);
+      //chamand o metodod imprimir
+      mostra("Mostrando o IMC Calculado: " + imc);
+
+    }
+    //inserindo os valores via parametros
+    calculaImc(77, 1.70);
+
+</script>

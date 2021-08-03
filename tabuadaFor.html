@@ -1,0 +1,21 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pula() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pula();
+    }
+
+    var numero = parseInt(prompt("Digite o Numero de Tabuada que deseja Ver: "))
+
+    for(var multiplicador = 1; multiplicador <= 12; multiplicador++){
+      mostra(numero * multiplicador)
+    }
+      mostra("FIM");
+    </script>

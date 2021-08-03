@@ -1,0 +1,29 @@
+<meta charset = "UTF-8">
+
+<script>
+    //programa para calcular o indice de massa corporal
+
+    function pulaLinha(){
+
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+      document.write(frase);
+      pulaLinha();
+    }
+
+    var pesoJunior = 60;
+    var alturaJunior = 1.72;
+
+    var imcJunior = pesoJunior / (alturaJunior*alturaJunior);
+    mostra("A sua massa de indice corporal eh: " + imcJunior );
+
+    var pesoSoto = 69;
+    var alturaSoto = 1.90;
+
+    var imcSoto = pesoSoto / (alturaSoto*alturaSoto);
+    mostra(imcSoto);
+</script>

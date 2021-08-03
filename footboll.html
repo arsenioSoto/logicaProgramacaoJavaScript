@@ -1,0 +1,37 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pula() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pula();
+    }
+
+    var equipa1 = prompt("Insira o nome da Primeira Equipa: ");
+    //  var equipa2 = prompt("Insira o nome da Segunda Equipa: ");
+    //convertendo um texto para um Numero com parseInt..............
+    var vitorias = parseInt(prompt("Entre com o Numero de Vitorias: "));
+    var empates = parseInt(prompt("Entre com o Numero de Empates: "));
+    var derrota = parseInt(prompt("Entre com o Numero de Derrotas: "));
+
+    var pontos = (vitorias * 3) + empates;
+
+    mostra("Os Pontos da equipa " + equipa1 + " : " + pontos);
+
+    if (pontos > 28) {
+      mostra("Sua Equipa esta melhor do que o ano passa. ");
+    }
+    if(pontos == 28){
+        mostra("seu equipa esta igual ao ano passsado. ");
+    }
+    if (pontos < 28) {
+        mostra("sua equipa esta pior doque o ano passado. ");
+    }
+
+    mostra("FIM");
+</script>

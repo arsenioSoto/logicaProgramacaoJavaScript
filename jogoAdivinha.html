@@ -1,0 +1,29 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pula() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pula();
+    }
+    ///////////////////funcao round para aredondar numero para inteiro
+    ///////////////////////////////////ramdon para gerar numero aleitario
+    var numeroPensado = Math.round(Math.random() * 10);
+    //testatndo na console
+    console.log(numeroPensado);
+    var chute = parseInt(prompt("Digite o seu Chute de 1 ate 10: "));
+
+    if (chute == numeroPensado) {
+      mostra("Voce Acertou! ");
+
+    }else {
+
+        mostra("Voce, errou o Numero Pensado eh:  " + numeroPensado);
+    }
+
+    </script>
